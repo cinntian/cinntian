@@ -418,10 +418,27 @@ button:focus {
 	width: 100%;
 }
 
+.mu-profile-img {
+  width: 250px;     
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;    
+}
+
+@media (max-width: 768px) {
+  .mu-profile-img {
+    width: 40%;      
+    max-width: 150px;
+    height: auto;
+  }
+}
+
+
 .mu-about-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	padding: 100px 0 0 0;
 	width: 100%;
 }
 
@@ -449,17 +466,33 @@ button:focus {
 }
 
 .mu-about-content-left {
-	display: inline;
-	float: left;
+	/* display: inline; */
+	/* float: left; */
 	margin-top: 50px;
+	/* flex: 1; */
+	display: flex;
+	align-items: center;     
+	justify-content: center; 
+	height: 100%;     
 }
 
 .mu-about-content-right {
-	display: inline;
+	flex: 1;
+	/* display: inline; */
 	float: left;
 	margin-top: 20px;
 	width: 100%;
+}
 
+.mu-text-about{
+	font-size: 18px;
+	font-weight: 700;
+	/* margin-top: 15px; */
+}
+
+.mu-text-style {
+	text-align: center;
+	margin-top: 15px;
 }
 
 .mu-skill-progress-bar {
@@ -470,6 +503,17 @@ button:focus {
 
 .mu-skill-progress-bar h3 {
 	margin-top: 20px;
+}
+
+.mu-skill-progress-bar ul {
+	padding-left: 20px;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+
+.mu-skill-progress-bar ul li {
+  font-size: 15px !important;
+  line-height: 2.0 !important;
 }
 
 .mu-skill-progress-bar>span {
@@ -506,6 +550,14 @@ button:focus {
 	top: 0;
 	left: 48%;
 	color: #fff;
+}
+
+.mu-social-media-info {
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  gap: 15px; 
+  margin-top: 15px;
 }
 
 .mu-social-media{
